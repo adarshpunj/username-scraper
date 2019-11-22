@@ -107,9 +107,9 @@ class InstagramUsernameScraper():
 
 		Parameters:
 		shortcode (string) : Photo ID
-		duration (int)     : Seconds for which liked_by 
+		duration (int)     : Seconds for which liked_by
 				     box is to be scrolled
-		"""
+	    	"""
 
 		self.driver.get(settings.INSTAGRAM_PHOTO_URL.format(shortcode))
 		# This script will open mobile version 
@@ -140,10 +140,10 @@ class InstagramUsernameScraper():
 
 	def scrapeBy_RecentMedia(self, duration=60):
 		"""
-		Downloads 12 CSV files packed by calling
-		scrapeBy_shortcode function for latest
-		Instagram posts in an account
-
+		Downloads 12 CSV
+		
+		Calls scrapeBy_shortcode function on latest
+		Instagram posts by the target account
 		"""
 
 		#Get Instagram account details in JSON format
