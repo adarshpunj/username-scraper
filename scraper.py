@@ -27,7 +27,6 @@ scraper.scrapeBy_shortcode(duration=10)
 """
 
 class InstagramUsernameScraper():
-
 	def __init__(self):
 		self.target_username = sys.argv[1]
 
@@ -39,11 +38,11 @@ class InstagramUsernameScraper():
 
 		Parameters:
 		*args (string) : these arguments are added as
-						 chrome options arguments
+				 chrome options arguments
 
 		window_size (string) : size of chromium window
 		download_directory : Files will be downloaded to this
-							 directory
+				     directory
 		"""
 
 		# Setting download location
@@ -109,7 +108,7 @@ class InstagramUsernameScraper():
 		Parameters:
 		shortcode (string) : Photo ID
 		duration (int)     : Seconds for which liked_by 
-							 box is to be scrolled
+				     box is to be scrolled
 		"""
 
 		self.driver.get(settings.INSTAGRAM_PHOTO_URL.format(shortcode))
